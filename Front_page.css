@@ -5,6 +5,7 @@
     color: white;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 #p1{
     position: fixed;
@@ -515,4 +516,190 @@ background-color: #0f1112;
 }
 i .fa-brands fa-whatsapp {
     color: green;
+}
+/* Keep existing CSS code up to the media queries */
+
+/* Add these media queries at the end of your CSS file */
+
+/* For tablets and smaller desktop screens */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    nav a {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .image img {
+        width: 350px;
+        height: 350px;
+        margin-left: 30px;
+    }
+
+    #p2 {
+        width: 400px;
+        margin-left: 500px;
+    }
+
+    .info {
+        margin-left: 500px;
+    }
+
+    .container {
+        margin-left: 50px;
+    }
+
+    .circle-container {
+        margin-left: 650px;
+    }
+
+    .box {
+        width: 90%;
+        margin-left: 5%;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .engineering, .pu, .school {
+        margin: 20px 0;
+    }
+
+    .project1, .project2, .project3, .project4 {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .project3, .project4 {
+        margin-left: auto;
+        margin-top: 20px;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin-left: 15px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .image img {
+        width: 250px;
+        height: 250px;
+        margin: 150px auto 0;
+        display: block;
+    }
+
+    .info {
+        margin: 30px 20px;
+        text-align: center;
+    }
+
+    #i1 {
+        font-size: 40px;
+    }
+
+    #i2 {
+        font-size: 16px;
+    }
+
+    .container {
+        margin: 150px auto 0;
+        max-width: 90%;
+    }
+
+    .circle-container {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .box {
+        width: 95%;
+        margin: 100px auto 0;
+    }
+
+    .engineering, .pu, .school {
+        width: 100%;
+    }
+
+    .project1, .project2, .project3, .project4 {
+        width: 95%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    #home .buttons {
+        margin: 20px auto;
+        width: 100%;
+    }
+}
+
+/* For very small mobile devices */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #i1 {
+        font-size: 30px;
+    }
+
+    .progress {
+        width: 200px;
+        height: 200px;
+    }
+
+    .progress::before {
+        width: 160px;
+        height: 160px;
+    }
+
+    .engineering .heading,
+    .pu .heading,
+    .school .heading {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .project1 .content,
+    .project2 .content,
+    .project3 .content,
+    .project4 .content {
+        font-size: 16px;
+    }
+}
+
+/* Fix for skill animation on mobile */
+@media screen and (max-width: 768px) {
+    .skill-per {
+        animation: none;
+        opacity: 1;
+    }
 }
